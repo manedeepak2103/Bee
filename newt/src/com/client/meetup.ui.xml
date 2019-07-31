@@ -1,0 +1,64 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:m="urn:import:gwt.material.design.client.ui"
+	>
+	<ui:style>
+	.important {
+		font-weight: bold;
+	}
+	.important {
+		font-weight: bold;
+	}
+	.block{
+      display: block;
+      margin-bottom: 10px;
+    }
+	
+	</ui:style>
+	<g:HTMLPanel>
+	  
+	<m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="MEET-UP LOCATIONS"/>
+      <m:MaterialCollapsible type="POPOUT">
+        <!-- ITEM 1 -->
+        <m:MaterialCollapsibleItem>
+          <m:MaterialCollapsibleHeader backgroundColor="AMBER">
+            <m:MaterialLink text="Cafe 1" iconType="CHECK_BOX" iconPosition="LEFT" textColor="BLACK" />
+          </m:MaterialCollapsibleHeader>
+          <m:MaterialCollapsibleBody>
+          
+             <m:MaterialRadioButton name="color" text="Offer " type="GAP" addStyleNames="{style.block}"/> 
+             <!--  <m:MaterialRadioButton name="color" text="Offer 2" type="GAP" addStyleNames="{style.block}"/>
+             <m:MaterialRadioButton name="color" text="Offer 3" type="GAP" addStyleNames="{style.block}"/>-->
+           
+            
+          </m:MaterialCollapsibleBody>
+        </m:MaterialCollapsibleItem>
+        <!-- ITEM 2 -->
+        <m:MaterialCollapsibleItem>
+          <m:MaterialCollapsibleHeader backgroundColor="AMBER">
+            <m:MaterialLink text="Cafe 2" iconType="CHECK_BOX" iconPosition="LEFT" textColor="BLACK" />
+          </m:MaterialCollapsibleHeader>
+          <m:MaterialCollapsibleBody>
+            <m:MaterialRadioButton name="color" text="Offer " type="GAP" addStyleNames="{style.block}"/>
+          <!--  <m:MaterialRadioButton name="color" text="Offer 2" type="GAP" addStyleNames="{style.block}"/>
+            <m:MaterialRadioButton name="color" text="Offer 3" type="GAP" addStyleNames="{style.block}"/>-->
+          </m:MaterialCollapsibleBody>
+        </m:MaterialCollapsibleItem>
+        <!-- ITEM 3 -->
+        <m:MaterialCollapsibleItem>
+          <m:MaterialCollapsibleHeader backgroundColor="AMBER">
+            <m:MaterialLink text="Cafe 3" iconType="CHECK_BOX" iconPosition="LEFT" textColor="BLACK" />
+          </m:MaterialCollapsibleHeader>
+          <m:MaterialCollapsibleBody>
+            <m:MaterialRadioButton name="color" text="Offer 2" type="GAP" addStyleNames="{style.block}"/>
+           <!-- <m:MaterialRadioButton name="color" text="Offer 2" type="GAP" addStyleNames="{style.block}"/>
+            <m:MaterialRadioButton name="color" text="Offer 3" type="GAP" addStyleNames="{style.block}"/>-->
+          </m:MaterialCollapsibleBody>
+        </m:MaterialCollapsibleItem>
+      </m:MaterialCollapsible>
+   </m:MaterialRow>
+
+	</g:HTMLPanel>
+</ui:UiBinder> 

@@ -1,0 +1,47 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+             xmlns:g="urn:import:com.google.gwt.user.client.ui"
+             xmlns:ma="urn:import:gwt.material.design.addins.client"
+             
+             xmlns:combobox="urn:import:gwt.material.design.addins.client.combobox"
+             xmlns:m="urn:import:gwt.material.design.client.ui">
+	<ui:style>
+	.important {
+		font-weight: bold;
+	}
+	</ui:style>
+<g:HTMLPanel>
+<m:MaterialPanel marginLeft="420" paddingBottom="10" >
+<m:MaterialRow width="160%"  >
+<m:MaterialRow height="150%">
+<m:MaterialColumn grid="l4" height="150%">
+<m:MaterialCard backgroundColor="WHITE">
+<m:MaterialCardContent textColor="BLACK">
+<m:MaterialCardTitle  textColor="BLACK" text="UPLOAD" />
+<m:MaterialLabel text="CATEGORY" />
+<combobox:MaterialComboBox ui:field="t1"  placeholder="SELECT CATEGORY" allowClear="true">
+<m:html.Option value="1" text="BOOK" ui:field="a1"/>
+<m:html.Option value="2" text="GADGET" ui:field="a2"/>
+</combobox:MaterialComboBox>
+<m:MaterialTextBox label=" Name" ui:field="t2"  grid="s12" />
+<m:MaterialLabel text="SUB-CATEGORY"></m:MaterialLabel>
+<combobox:MaterialComboBox ui:field="t3" placeholder="SELECT TYPE" allowClear="true">
+<m:html.Option value="1" text="COMIC"/>
+<m:html.Option value="2" text="EDUCATIONAL"/>
+<m:html.Option value="2" text="ADVENTURE"/>
+<m:html.Option value="2" text="SELF-HELP"/>
+<m:html.Option value="2" text="MYSTERY"/>
+</combobox:MaterialComboBox>
+<m:MaterialTextArea  label="DESCRIPTION" ui:field="t4" grid="s12" />        
+<m:MaterialTextBox  label="CITY" ui:field="t6" grid="s12"  />  
+</m:MaterialCardContent>
+<m:MaterialCardAction>
+<m:MaterialButton text="SIGN-UP" backgroundColor="AMBER_DARKEN_3" ui:field="b"/>
+</m:MaterialCardAction>
+</m:MaterialCard>
+</m:MaterialColumn>
+</m:MaterialRow>
+</m:MaterialRow>
+</m:MaterialPanel>
+</g:HTMLPanel>
+</ui:UiBinder> 

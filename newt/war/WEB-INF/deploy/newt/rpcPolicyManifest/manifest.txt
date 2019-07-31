@@ -1,0 +1,3 @@
+# Module newt
+# RPC service class, partial path of RPC policy file
+com.client.GreetingService, 80052B234D0F91AD14F10390A105523B.gwt.rpc
